@@ -23,7 +23,7 @@ git clone https://github.com/IPH-Technologies-Pvt-Ltd/movie-media-iOS.git
 2. Open the project in Xcode:
 
 ```
-cd movie-media-app
+cd movie-media-iOS
 open MovieMediaApp.xcodeproj
 ```
 
