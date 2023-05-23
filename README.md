@@ -72,7 +72,6 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 This project is licensed under the [MIT License](LICENSE).
 
 ## Screenshot
-<img src="https://github.com/IPH-Technologies-Pvt-Ltd/MovieMedia-App-iOS/assets/124572978/1441980d-e1da-402f-b85f-75ab468e7d4d
-" 
+<img src="https://github.com/IPH-Technologies-Pvt-Ltd/MovieMedia-App-iOS/assets/124572978/35261ab2-3848-42a2-99ae-eaaaaab90974" 
      width="200" 
      height="400"/>
