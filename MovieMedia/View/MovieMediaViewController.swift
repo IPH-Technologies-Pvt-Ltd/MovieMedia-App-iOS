@@ -1,16 +1,16 @@
 //
 //  ViewController.swift
-//  AnimationDesignCollectionView
+//  MovieMedia
 //
 //  Created by iPHTech 29 on 28/04/23.
 //
 
 import UIKit
 
-class AnimatedDesignViewController: UIViewController, UIGestureRecognizerDelegate {
+class MovieMediaViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var searchBar: UITextField!
-    @IBOutlet weak var animatedCollectionView: UICollectionView!
+    @IBOutlet weak var MovieMediaCollectionView: UICollectionView!
 
     var moviesListArray = [Movies]()
     var firstIter = true
@@ -20,11 +20,11 @@ class AnimatedDesignViewController: UIViewController, UIGestureRecognizerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        animatedCollectionView.delegate = self
-        animatedCollectionView.dataSource = self
+        MovieMediaCollectionView.delegate = self
+        MovieMediaCollectionView.dataSource = self
         moviesListArray = Movies.defaultMoviesList()
-        animatedCollectionView.addGestureRecognizer(createSwipeGestureRecognizer(for: .up))
-        animatedCollectionView.addGestureRecognizer(createSwipeGestureRecognizer(for: .down))
+        MovieMediaCollectionView.addGestureRecognizer(createSwipeGestureRecognizer(for: .up))
+        MovieMediaCollectionView.addGestureRecognizer(createSwipeGestureRecognizer(for: .down))
         
     }
    
@@ -47,10 +47,10 @@ class AnimatedDesignViewController: UIViewController, UIGestureRecognizerDelegat
             switch sender.direction {
             case .up,.down:
                 var visibleRect    = CGRect()
-                   visibleRect.origin = animatedCollectionView.contentOffset
-                   visibleRect.size   = animatedCollectionView.bounds.size
+                   visibleRect.origin = MovieMediaCollectionView.contentOffset
+                   visibleRect.size   = MovieMediaCollectionView.bounds.size
                    let visiblePoint   = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
-                guard let visibleIndexPath: IndexPath = animatedCollectionView.indexPathForItem(at: visiblePoint) else { return }
+                guard let visibleIndexPath: IndexPath = MovieMediaCollectionView.indexPathForItem(at: visiblePoint) else { return }
                 let vc = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: controllerIdentifier) as! MoviesDetailsViewController
                 vc.titleN = moviesListArray[visibleIndexPath.row].movieName
                 vc.ratingN = moviesListArray[visibleIndexPath.row].rating
@@ -64,7 +64,7 @@ class AnimatedDesignViewController: UIViewController, UIGestureRecognizerDelegat
     }
 }
 
-extension AnimatedDesignViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
+extension MovieMediaViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        
@@ -72,7 +72,7 @@ extension AnimatedDesignViewController: UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AnimatedDesignCollectionViewCell.identifier, for: indexPath as IndexPath) as! AnimatedDesignCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieMediaCollectionViewCell.identifier, for: indexPath as IndexPath) as! MovieMediaCollectionViewCell
         cell.addShadowView.addShadowOnBottom()
         cell.movieImageView.makeRoundedCorner()
         cell.imdbLabel.layer.borderWidth = 1
@@ -109,7 +109,7 @@ extension AnimatedDesignViewController: UICollectionViewDelegate, UICollectionVi
         
         let centerX = scrollView.contentOffset.x + scrollView.frame.size.width/2
         print(centerX)
-        for cell in animatedCollectionView.visibleCells {
+        for cell in MovieMediaCollectionView.visibleCells {
             if cell.frame.size.height == 543 {
                 cell.frame.size.height +=  100
                 cell.frame.origin.y = cell.frame.origin.y - 50

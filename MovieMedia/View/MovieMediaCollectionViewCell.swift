@@ -1,13 +1,13 @@
 //
-//  AnimatedDesignCollectionViewCell.swift
-//  AnimationDesignCollectionView
+
+//  MovieMedia
 //
 //  Created by iPHTech 29 on 28/04/23.
 //
 
 import UIKit
 
-class AnimatedDesignCollectionViewCell: UICollectionViewCell {
+class MovieMediaCollectionViewCell: UICollectionViewCell {
 
     static let identifier = "AnimatedDesignCollectionViewCell"
     @IBOutlet weak var movieImageView: UIImageView!

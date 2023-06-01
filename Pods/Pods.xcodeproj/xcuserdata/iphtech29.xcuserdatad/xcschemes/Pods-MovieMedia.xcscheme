@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB2EE79AD633F4901CF2ED42FB1CCD6C"
-               BuildableName = "Pods_AnimationDesignCollectionView.framework"
-               BlueprintName = "Pods-AnimationDesignCollectionView"
+               BlueprintIdentifier = "7EBF4572D716FAD211244CC18056D5EC"
+               BuildableName = "Pods_MovieMedia.framework"
+               BlueprintName = "Pods-MovieMedia"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

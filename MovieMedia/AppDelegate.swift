@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  AnimationDesignCollectionView
+//  MovieMedia
 //
 //  Created by iPHTech 29 on 28/04/23.
-//
+// MovieMedia
 
 import UIKit
 

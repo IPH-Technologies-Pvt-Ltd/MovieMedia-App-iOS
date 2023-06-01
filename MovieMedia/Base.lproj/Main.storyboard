@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Animated Design View Controller-->
+        <!--Movie Media View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AnimatedDesignViewController" customModule="AnimationDesignCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MovieMediaViewController" customModule="MovieMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AnimatedDesignCollectionViewCell" id="VLo-1x-9BD" customClass="AnimatedDesignCollectionViewCell" customModule="AnimationDesignCollectionView" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AnimatedDesignCollectionViewCell" id="VLo-1x-9BD" customClass="MovieMediaCollectionViewCell" customModule="MovieMedia" customModuleProvider="target">
                                         <rect key="frame" x="20" y="157" width="351" height="328"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ghx-D9-BcH">
@@ -149,7 +149,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8AD-He-DSN"/>
                     <connections>
-                        <outlet property="animatedCollectionView" destination="Ioq-QU-z7F" id="Ndj-oz-L4N"/>
+                        <outlet property="MovieMediaCollectionView" destination="Ioq-QU-z7F" id="Ndj-oz-L4N"/>
                         <outlet property="searchBar" destination="aUW-4J-Hk3" id="GHF-Uo-sHU"/>
                     </connections>
                 </viewController>
@@ -160,7 +160,7 @@
         <!--Movies Details View Controller-->
         <scene sceneID="xj4-Z4-uh9">
             <objects>
-                <viewController storyboardIdentifier="MoviesDetailsViewController" id="a0P-gN-cb7" customClass="MoviesDetailsViewController" customModule="AnimationDesignCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoviesDetailsViewController" id="a0P-gN-cb7" customClass="MoviesDetailsViewController" customModule="MovieMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IV7-GE-O60">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1279"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
