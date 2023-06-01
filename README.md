@@ -73,5 +73,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Screenshot
 <img src="https://github.com/IPH-Technologies-Pvt-Ltd/MovieMedia-App-iOS/assets/124572978/35261ab2-3848-42a2-99ae-eaaaaab90974" 
-     width="200" 
-     height="400"/>
+     width="300" 
+     height="600"/>
