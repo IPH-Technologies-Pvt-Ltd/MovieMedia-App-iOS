@@ -2,7 +2,6 @@ Sure! Here's an example of a README file for a movie media app written in Swift,
 
 # Movie Media App
 [![Swift](https://img.shields.io/badge/swift-%2320232a.svg?style=for-the-badge&logo=swift&logoColor=%23F05138)](https://swift.org/)
-
 [![Ruby](https://img.shields.io/badge/ruby-%2320232a.svg?style=for-the-badge&logo=ruby&logoColor=%23CC342D)](https://www.ruby-lang.org/)
 
 This is a movie media app developed in Swift. It allows users to browse and search for movies, view details, and save their favorite movies.
